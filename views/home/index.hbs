@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="mb-4 text-white">Catálogo de Series</h1>
+
+  <form method="GET" action="/" class="row g-3 mb-4">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Buscar por nombre"
+             value="{{searchedName}}">
+    </div>
+    <div class="col-md-4">
+      <select name="genre" class="form-select">
+        <option value="">-- Filtrar por género --</option>
+        {{#each genres}}
+          <option value="{{this.name}}" 
+            {{#eq this.name ../selectedGenre}}selected{{/eq}}>
+            {{this.name}}
+          </option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+    </div>
+  </form>
+
+  <div class="row">
+    {{#each series}}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-dark">
+          <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text"><strong>Género:</strong> {{this.genre}}</p>
+            <a href="/detail/{{this.id}}" class="btn btn-outline-primary">Ver Detalle</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
