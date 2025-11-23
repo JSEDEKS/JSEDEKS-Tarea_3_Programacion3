@@ -1,0 +1,8 @@
+<h1 class="mb-4">Eliminar serie</h1>
+
+<p>¿Está seguro que desea eliminar la serie <strong>{{serie.name}}</strong>?</p>
+
+<form method="POST" action="/series/delete/{{serie.id}}">
+  <a href="/series" class="btn btn-secondary">Cancelar</a>
+  <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

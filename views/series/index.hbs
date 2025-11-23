@@ -1,0 +1,27 @@
+<h1 class="mb-4 text-white" >Mantenimiento de Series</h1>
+
+<a href="/series/create" class="btn btn-success mb-3">Crear nueva serie</a>
+
+<table class="table table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Imagen</th>
+      <th>Género</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each series}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td><img src="{{this.image}}" alt="{{this.name}}" width="100"></td>
+        <td>{{this.genre}}</td>
+        <td>
+          <a href="/series/edit/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+          <a href="/series/delete/{{this.id}}" class="btn btn-danger btn-sm">Eliminar</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,30 @@
+<h1 class="mb-4">Crear nueva serie</h1>
+
+<form method="POST" action="/series/create">
+  <div class="mb-3">
+    <label class="form-label">Nombre de la serie</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Imagen de portada (URL)</label>
+    <input type="text" name="image" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Enlace del video (YouTube embed o normal)</label>
+    <input type="text" name="video" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Género</label>
+    <select name="genre" class="form-select" required>
+      {{#each genres}}
+        <option value="{{this.name}}">{{this.name}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <a href="/series" class="btn btn-secondary">Volver</a>
+  <button type="submit" class="btn btn-primary">Crear</button>
+</form>
