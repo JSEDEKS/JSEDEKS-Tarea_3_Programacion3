@@ -1,0 +1,10 @@
+<h1>Editar género</h1>
+
+<form method="POST" action="/genres/edit/{{genre.id}}">
+  <div class="mb-3">
+    <label class="form-label">Nombre del género</label>
+    <input type="text" name="name" class="form-control" value="{{genre.name}}" required>
+  </div>
+  <a href="/genres" class="btn btn-secondary">Volver</a>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

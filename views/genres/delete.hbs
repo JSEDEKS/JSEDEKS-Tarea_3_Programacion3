@@ -1,0 +1,7 @@
+<h1>Eliminar género</h1>
+<p>¿Está seguro que desea eliminar el género <strong>{{genre.name}}</strong>?</p>
+
+<form method="POST" action="/genres/delete/{{genre.id}}">
+  <a href="/genres" class="btn btn-secondary">Cancelar</a>
+  <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>
