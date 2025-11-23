@@ -1,0 +1,23 @@
+[
+  {
+    "id": "5f9314a5-659f-4155-b407-52a3cd6fc96d",
+    "name": "Stranger things",
+    "image": "https://ca-times.brightspotcdn.com/dims4/default/f4b2933/2147483647/strip/true/crop/1204x716+0+0/resize/1200x714!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe5%2F15%2F72193efd4f51a95b10473df29e65%2Funiversal-studios-halloween-horror-nights-x-stranger-things.jpg",
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "genre": "Misterio"
+  },
+  {
+    "id": "d5a141de-47c8-44de-ae7e-a85b10d51909",
+    "name": "Better call Saul",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpQtALhSi4Xu_XYc8pa6IIrS0OnlfALHnW7JsOR5MC9o33kajKo8FnFZBuW2LLs5oC3sF2Ctkv8gt6bS__BloGTmtunXDmr3Zy6KYUAsk",
+    "video": "https://www.youtube.com/embed/CBwAMEqhvh8",
+    "genre": "Terror"
+  },
+  {
+    "id": "3bea5985-ad5e-4932-bff5-2def2ff20fe9",
+    "name": "Serie Animada Batman",
+    "image": "https://i.blogs.es/c7bb77/batman-the-animated-series-3/1366_2000.jpg",
+    "video": "https://www.youtube.com/embed/UjYXWCmz8ZM",
+    "genre": "Misterio"
+  }
+]
