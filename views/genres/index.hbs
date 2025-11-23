@@ -1,0 +1,22 @@
+<h1 class="mb-4 text-white">Mantenimiento de Géneros</h1>
+<a href="/genres/create" class="btn btn-success mb-3">Crear nuevo género</a>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each genres}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>
+          <a href="/genres/edit/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+          <a href="/genres/delete/{{this.id}}" class="btn btn-danger btn-sm">Eliminar</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
